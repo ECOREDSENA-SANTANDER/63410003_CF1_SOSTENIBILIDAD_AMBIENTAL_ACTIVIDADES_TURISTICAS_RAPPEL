@@ -19,87 +19,717 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: '',
       titulo: 'Cuestionario',
-      introduccion: '<b>Objetivo:</b> verificar la apropiación de los conceptos relacionados con sostenibilidad, turismo sostenible, características de los escenarios de rappel, rutas de descenso, impactos ambientales, riesgos, limitaciones, normativa aplicable y responsabilidad ética en el desarrollo de actividades turísticas de rappel.',
+      introduccion:
+        '<b>Objetivo:</b> verificar la apropiación de los conceptos relacionados con sostenibilidad, turismo sostenible, características de los escenarios de <i>rappel</i>, rutas de descenso, impactos ambientales, riesgos, limitaciones, normativa aplicable y responsabilidad ética en el desarrollo de actividades turísticas de <i>rappel</i>.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
-      preguntas: [{"id": 1, "texto": "¿Cuál de las siguientes situaciones representa una aplicación del principio de sostenibilidad en una actividad turística de rappel?", "imagen": "@/assets/actividad/imagen1.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Incrementar el número de participantes para aprovechar completamente la ruta.", "esCorrecta": false}, {"id": "b", "texto": "Priorizar la duración de la experiencia sobre las condiciones del escenario.", "esCorrecta": false}, {"id": "c", "texto": "Compatibilizar el uso turístico del escenario con la conservación de sus recursos.", "esCorrecta": true}, {"id": "d", "texto": "Concentrar la evaluación de la actividad únicamente en el descenso técnico.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 2, "texto": "¿Qué característica permite comprender el turismo sostenible aplicado a las actividades de aventura?", "imagen": "@/assets/actividad/imagen2.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Considera las repercusiones ambientales, sociales y económicas de la actividad turística.", "esCorrecta": true}, {"id": "b", "texto": "Centra la operación exclusivamente en la satisfacción inmediata de los participantes.", "esCorrecta": false}, {"id": "c", "texto": "Restringe la sostenibilidad a las actividades realizadas dentro de áreas protegidas.", "esCorrecta": false}, {"id": "d", "texto": "Establece que toda actividad desarrollada en espacios naturales resulta sostenible.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 3, "texto": "¿Cuál de los siguientes elementos forma parte de la caracterización ambiental de un escenario turístico de rappel?", "imagen": "@/assets/actividad/imagen3.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Únicamente la altura total establecida para efectuar el descenso mediante cuerda.", "esCorrecta": false}, {"id": "b", "texto": "Las condiciones físicas, meteorológicas y biológicas presentes en el escenario.", "esCorrecta": true}, {"id": "c", "texto": "Exclusivamente el número de equipos disponibles para desarrollar la actividad.", "esCorrecta": false}, {"id": "d", "texto": "La estrategia comercial utilizada para promocionar el recorrido entre los visitantes.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 4, "texto": "¿Cómo debe comprenderse una ruta de descenso desde la perspectiva turística y ambiental?", "imagen": "@/assets/actividad/imagen4.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Como el tramo vertical comprendido entre el inicio y el final del descenso.", "esCorrecta": false}, {"id": "b", "texto": "Como la superficie natural donde se instalan exclusivamente los sistemas técnicos.", "esCorrecta": false}, {"id": "c", "texto": "Como el espacio destinado únicamente a la preparación previa de los participantes.", "esCorrecta": false}, {"id": "d", "texto": "Como el conjunto de sectores funcionales desde el acceso hasta la salida o retorno.", "esCorrecta": true}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 5, "texto": "¿Por qué las condiciones meteorológicas deben considerarse al caracterizar un escenario de rappel?", "imagen": "@/assets/actividad/imagen5.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Porque determinan permanentemente la clasificación turística asignada al escenario.", "esCorrecta": false}, {"id": "b", "texto": "Porque sustituyen la necesidad de reconocer las características físicas del recorrido.", "esCorrecta": false}, {"id": "c", "texto": "Porque pueden modificar temporalmente superficies, accesos o condiciones del recorrido.", "esCorrecta": true}, {"id": "d", "texto": "Porque permiten establecer automáticamente el número máximo de participantes permitido.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 6, "texto": "¿Cuál de las siguientes situaciones corresponde a una condición ambiental y no necesariamente a un impacto generado por el turismo?", "imagen": "@/assets/actividad/imagen6.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Presencia natural de una superficie rocosa húmeda después de una precipitación.", "esCorrecta": true}, {"id": "b", "texto": "Pérdida de vegetación ocasionada por el tránsito reiterado fuera del sendero.", "esCorrecta": false}, {"id": "c", "texto": "Acumulación de residuos relacionada con la permanencia frecuente de visitantes.", "esCorrecta": false}, {"id": "d", "texto": "Compactación progresiva producida por concentración de grupos en un mismo sector.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 7, "texto": "¿Qué relación permite identificar adecuadamente un impacto ambiental?", "imagen": "@/assets/actividad/imagen7.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Escenario turístico, atractivo natural y estrategia utilizada para su comercialización.", "esCorrecta": false}, {"id": "b", "texto": "Actividad recreativa, cantidad de equipos y duración prevista para el descenso.", "esCorrecta": false}, {"id": "c", "texto": "Condición meteorológica, percepción del visitante y promoción turística del territorio.", "esCorrecta": false}, {"id": "d", "texto": "Acción o fuente, componente ambiental y cambio o efecto producido.", "esCorrecta": true}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 8, "texto": "¿Cuál de las siguientes situaciones representa un posible impacto directo sobre la vegetación?", "imagen": "@/assets/actividad/imagen8.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Variación natural de la temperatura registrada durante diferentes momentos del recorrido.", "esCorrecta": false}, {"id": "b", "texto": "Pisoteo de cobertura vegetal provocado por desplazamientos fuera de la ruta establecida.", "esCorrecta": true}, {"id": "c", "texto": "Incremento temporal del caudal de una quebrada debido a precipitaciones recientes.", "esCorrecta": false}, {"id": "d", "texto": "Presencia de una pendiente pronunciada en el sector destinado a la aproximación.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 9, "texto": "¿Qué caracteriza a un impacto ambiental acumulativo?", "imagen": "@/assets/actividad/imagen9.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Aumenta progresivamente como resultado de acciones o interacciones repetidas.", "esCorrecta": true}, {"id": "b", "texto": "Se produce exclusivamente por fenómenos naturales de elevada intensidad.", "esCorrecta": false}, {"id": "c", "texto": "Desaparece inmediatamente después de finalizar cada actividad turística realizada.", "esCorrecta": false}, {"id": "d", "texto": "Se presenta únicamente cuando existe una intervención permanente del escenario.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 10, "texto": "¿Cuál de los siguientes factores puede modificar la magnitud de un impacto ambiental asociado con el rappel?", "imagen": "@/assets/actividad/imagen10.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "El diseño gráfico utilizado para presentar comercialmente la experiencia turística.", "esCorrecta": false}, {"id": "b", "texto": "El nombre asignado por el prestador al recorrido dentro de su portafolio.", "esCorrecta": false}, {"id": "c", "texto": "La frecuencia de uso, intensidad, temporalidad y sensibilidad del entorno.", "esCorrecta": true}, {"id": "d", "texto": "La cantidad de fotografías promocionales disponibles sobre el atractivo turístico.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 11, "texto": "¿Qué diferencia principalmente un riesgo de un impacto ambiental?", "imagen": "@/assets/actividad/imagen1.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "El riesgo siempre corresponde a una afectación ambiental que ya se ha producido.", "esCorrecta": false}, {"id": "b", "texto": "El impacto únicamente puede presentarse cuando existe una restricción normativa previa.", "esCorrecta": false}, {"id": "c", "texto": "El riesgo corresponde exclusivamente a situaciones relacionadas con condiciones meteorológicas.", "esCorrecta": false}, {"id": "d", "texto": "El riesgo expresa una posibilidad de consecuencias, mientras el impacto corresponde a una alteración.", "esCorrecta": true}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 12, "texto": "¿Qué se entiende por limitación ambiental dentro de un escenario turístico de rappel?", "imagen": "@/assets/actividad/imagen2.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Una condición del territorio que puede restringir o condicionar el desarrollo de la actividad.", "esCorrecta": true}, {"id": "b", "texto": "Una sanción económica impuesta automáticamente cuando ocurre un impacto sobre el ambiente.", "esCorrecta": false}, {"id": "c", "texto": "Una dificultad técnica relacionada exclusivamente con el manejo de equipos especializados.", "esCorrecta": false}, {"id": "d", "texto": "Una recomendación comercial destinada a reducir la cantidad de visitantes del recorrido.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 13, "texto": "¿Cuál es una práctica adecuada para organizar información cualitativa durante el análisis de un escenario de rappel?", "imagen": "@/assets/actividad/imagen3.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Registrar únicamente las condiciones que representen una afectación ambiental evidente.", "esCorrecta": false}, {"id": "b", "texto": "Clasificar los hallazgos por sector, componente ambiental, condición y tipo de interacción.", "esCorrecta": true}, {"id": "c", "texto": "Sustituir los registros descriptivos por apreciaciones generales sobre el estado del lugar.", "esCorrecta": false}, {"id": "d", "texto": "Considerar como impactos todos los cambios encontrados durante la visita al escenario.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 14, "texto": "¿Cuál es la función principal de la Ley 99 de 1993 dentro del marco ambiental colombiano abordado en el componente?", "imagen": "@/assets/actividad/imagen4.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Establecer exclusivamente los requisitos técnicos para la operación turística del rappel.", "esCorrecta": false}, {"id": "b", "texto": "Determinar los procedimientos específicos para instalar sistemas destinados al descenso.", "esCorrecta": false}, {"id": "c", "texto": "Crear el Ministerio del Medio Ambiente y organizar el Sistema Nacional Ambiental.", "esCorrecta": true}, {"id": "d", "texto": "Reglamentar únicamente la prestación comercial de los servicios de turismo de aventura.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 15, "texto": "¿Por qué debe verificarse la figura territorial o de manejo de un escenario natural antes de desarrollar una actividad turística?", "imagen": "@/assets/actividad/imagen5.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Porque todos los escenarios naturales poseen exactamente las mismas restricciones de utilización.", "esCorrecta": false}, {"id": "b", "texto": "Porque permite reemplazar los requisitos turísticos por las disposiciones ambientales territoriales.", "esCorrecta": false}, {"id": "c", "texto": "Porque determina automáticamente el nivel técnico requerido para efectuar cualquier descenso.", "esCorrecta": false}, {"id": "d", "texto": "Porque pueden existir usos permitidos, condicionados o restringidos según el territorio.", "esCorrecta": true}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 16, "texto": "¿Cuál es la relación correcta entre la NTS-AV 011 y la NTC-ISO 21101?", "imagen": "@/assets/actividad/imagen6.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "La primera aborda la operación de rappel; la segunda, la gestión de la seguridad en turismo de aventura.", "esCorrecta": true}, {"id": "b", "texto": "La primera regula áreas protegidas; la segunda establece las obligaciones ambientales de visitantes.", "esCorrecta": false}, {"id": "c", "texto": "La primera determina impactos ambientales; la segunda establece capacidades de carga para rutas.", "esCorrecta": false}, {"id": "d", "texto": "La primera regula prestadores hoteleros; la segunda define exclusivamente equipos para descenso.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 17, "texto": "¿Qué aspecto debe considerarse al interpretar una norma aplicable a un escenario turístico de rappel?", "imagen": "@/assets/actividad/imagen7.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Únicamente el año de expedición y la extensión total del documento consultado.", "esCorrecta": false}, {"id": "b", "texto": "Su vigencia, ámbito, objeto, autoridad competente y relación con el escenario.", "esCorrecta": true}, {"id": "c", "texto": "Principalmente la frecuencia con que es mencionada por los prestadores turísticos.", "esCorrecta": false}, {"id": "d", "texto": "Exclusivamente la posibilidad de aplicar sus disposiciones en cualquier escenario natural.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 18, "texto": "¿Qué implica actuar dentro de las competencias profesionales en una actividad turística de rappel?", "imagen": "@/assets/actividad/imagen8.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Ejecutar cualquier procedimiento cuando exista experiencia previa en turismo de naturaleza.", "esCorrecta": false}, {"id": "b", "texto": "Reemplazar las certificaciones técnicas mediante conocimientos generales sobre sostenibilidad ambiental.", "esCorrecta": false}, {"id": "c", "texto": "Limitar la participación profesional a funciones para las cuales se cuenta con las competencias requeridas.", "esCorrecta": true}, {"id": "d", "texto": "Priorizar la experiencia turística cuando las condiciones técnicas dificulten cumplir el recorrido previsto.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 19, "texto": "¿Cómo se relaciona la ética turística con la responsabilidad ambiental en actividades de rappel?", "imagen": "@/assets/actividad/imagen9.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Orienta decisiones responsables frente a visitantes, comunidades, recursos naturales y territorio.", "esCorrecta": true}, {"id": "b", "texto": "Permite reemplazar las obligaciones legales mediante decisiones basadas en criterios personales.", "esCorrecta": false}, {"id": "c", "texto": "Se concentra exclusivamente en mejorar la experiencia recreativa ofrecida a los participantes.", "esCorrecta": false}, {"id": "d", "texto": "Aplica solamente cuando la actividad turística se desarrolla dentro de un área protegida.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}, {"id": 20, "texto": "Ante una condición ambiental sensible identificada en un escenario de rappel, ¿qué actuación refleja mejor un análisis responsable?", "imagen": "@/assets/actividad/imagen10.png", "barajarRespuestas": true, "opciones": [{"id": "a", "texto": "Continuar la actividad cuando técnicamente sea posible, independientemente de la condición ambiental.", "esCorrecta": false}, {"id": "b", "texto": "Considerar la condición, las disposiciones aplicables y las posibles consecuencias de la actividad.", "esCorrecta": true}, {"id": "c", "texto": "Clasificar automáticamente el escenario como no apto para cualquier modalidad de turismo de aventura.", "esCorrecta": false}, {"id": "d", "texto": "Trasladar toda responsabilidad ambiental a las personas participantes antes de iniciar el recorrido.", "esCorrecta": false}], "mensaje_correcto": "¡Muy bien! Ha acertado la respuesta.", "mensaje_incorrecto": "Lo sentimos, su respuesta no es la correcta."}], 
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
-      mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion: '<b>Objetivo:</b> verificar la apropiación de los conceptos relacionados con sostenibilidad, turismo sostenible, características de los escenarios de rappel, rutas de descenso, impactos ambientales, riesgos, limitaciones, normativa aplicable y responsabilidad ética en el desarrollo de actividades turísticas de rappel.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
+      preguntas: [
         {
           id: 1,
           texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
+            '¿Cuál de las siguientes situaciones representa una aplicación del principio de sostenibilidad en una actividad turística de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Incrementar el número de participantes para aprovechar completamente la ruta.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Priorizar la duración de la experiencia sobre las condiciones del escenario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Compatibilizar el uso turístico del escenario con la conservación de sus recursos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Concentrar la evaluación de la actividad únicamente en el descenso técnico.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 2,
           texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
+            '¿Qué característica permite comprender el turismo sostenible aplicado a las actividades de aventura?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Considera las repercusiones ambientales, sociales y económicas de la actividad turística.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Centra la operación exclusivamente en la satisfacción inmediata de los participantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Restringe la sostenibilidad a las actividades realizadas dentro de áreas protegidas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Establece que toda actividad desarrollada en espacios naturales resulta sostenible.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 3,
           texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
+            '¿Cuál de los siguientes elementos forma parte de la caracterización ambiental de un escenario turístico de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Únicamente la altura total establecida para efectuar el descenso mediante cuerda.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Las condiciones físicas, meteorológicas y biológicas presentes en el escenario.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Exclusivamente el número de equipos disponibles para desarrollar la actividad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'La estrategia comercial utilizada para promocionar el recorrido entre los visitantes.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 4,
           texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
+            '¿Cómo debe comprenderse una ruta de descenso desde la perspectiva turística y ambiental?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Como el tramo vertical comprendido entre el inicio y el final del descenso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Como la superficie natural donde se instalan exclusivamente los sistemas técnicos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Como el espacio destinado únicamente a la preparación previa de los participantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Como el conjunto de sectores funcionales desde el acceso hasta la salida o retorno.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 5,
           texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
+            '¿Por qué las condiciones meteorológicas deben considerarse al caracterizar un escenario de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen5.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Porque determinan permanentemente la clasificación turística asignada al escenario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Porque sustituyen la necesidad de reconocer las características físicas del recorrido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Porque pueden modificar temporalmente superficies, accesos o condiciones del recorrido.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Porque permiten establecer automáticamente el número máximo de participantes permitido.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 6,
           texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
+            '¿Cuál de las siguientes situaciones corresponde a una condición ambiental y no necesariamente a un impacto generado por el turismo?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Presencia natural de una superficie rocosa húmeda después de una precipitación.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Pérdida de vegetación ocasionada por el tránsito reiterado fuera del sendero.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Acumulación de residuos relacionada con la permanencia frecuente de visitantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Compactación progresiva producida por concentración de grupos en un mismo sector.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 7,
           texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
+            '¿Qué relación permite identificar adecuadamente un impacto ambiental?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Escenario turístico, atractivo natural y estrategia utilizada para su comercialización.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Actividad recreativa, cantidad de equipos y duración prevista para el descenso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Condición meteorológica, percepción del visitante y promoción turística del territorio.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Acción o fuente, componente ambiental y cambio o efecto producido.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 8,
           texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
+            '¿Cuál de las siguientes situaciones representa un posible impacto directo sobre la vegetación?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Variación natural de la temperatura registrada durante diferentes momentos del recorrido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Pisoteo de cobertura vegetal provocado por desplazamientos fuera de la ruta establecida.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Incremento temporal del caudal de una quebrada debido a precipitaciones recientes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Presencia de una pendiente pronunciada en el sector destinado a la aproximación.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
+          texto: '¿Qué caracteriza a un impacto ambiental acumulativo?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Aumenta progresivamente como resultado de acciones o interacciones repetidas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Se produce exclusivamente por fenómenos naturales de elevada intensidad.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Desaparece inmediatamente después de finalizar cada actividad turística realizada.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Se presenta únicamente cuando existe una intervención permanente del escenario.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 10,
           texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
+            '¿Cuál de los siguientes factores puede modificar la magnitud de un impacto ambiental asociado con el <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'El diseño gráfico utilizado para presentar comercialmente la experiencia turística.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'El nombre asignado por el prestador al recorrido dentro de su portafolio.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'La frecuencia de uso, intensidad, temporalidad y sensibilidad del entorno.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'La cantidad de fotografías promocionales disponibles sobre el atractivo turístico.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 11,
+          texto:
+            '¿Qué diferencia principalmente un riesgo de un impacto ambiental?',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'El riesgo siempre corresponde a una afectación ambiental que ya se ha producido.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'El impacto únicamente puede presentarse cuando existe una restricción normativa previa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'El riesgo corresponde exclusivamente a situaciones relacionadas con condiciones meteorológicas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'El riesgo expresa una posibilidad de consecuencias, mientras el impacto corresponde a una alteración.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 12,
+          texto:
+            '¿Qué se entiende por limitación ambiental dentro de un escenario turístico de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Una condición del territorio que puede restringir o condicionar el desarrollo de la actividad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Una sanción económica impuesta automáticamente cuando ocurre un impacto sobre el ambiente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Una dificultad técnica relacionada exclusivamente con el manejo de equipos especializados.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Una recomendación comercial destinada a reducir la cantidad de visitantes del recorrido.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 13,
+          texto:
+            '¿Cuál es una práctica adecuada para organizar información cualitativa durante el análisis de un escenario de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Registrar únicamente las condiciones que representen una afectación ambiental evidente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Clasificar los hallazgos por sector, componente ambiental, condición y tipo de interacción.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Sustituir los registros descriptivos por apreciaciones generales sobre el estado del lugar.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Considerar como impactos todos los cambios encontrados durante la visita al escenario.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 14,
+          texto:
+            '¿Cuál es la función principal de la Ley 99 de 1993 dentro del marco ambiental colombiano abordado en el componente?',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Establecer exclusivamente los requisitos técnicos para la operación turística del <i>rappel</i>.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Determinar los procedimientos específicos para instalar sistemas destinados al descenso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Crear el Ministerio del Medio Ambiente y organizar el Sistema Nacional Ambiental.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Reglamentar únicamente la prestación comercial de los servicios de turismo de aventura.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 15,
+          texto:
+            '¿Por qué debe verificarse la figura territorial o de manejo de un escenario natural antes de desarrollar una actividad turística?',
+          imagen: '@/assets/actividad/imagen5.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Porque todos los escenarios naturales poseen exactamente las mismas restricciones de utilización.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Porque permite reemplazar los requisitos turísticos por las disposiciones ambientales territoriales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Porque determina automáticamente el nivel técnico requerido para efectuar cualquier descenso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Porque pueden existir usos permitidos, condicionados o restringidos según el territorio.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 16,
+          texto:
+            '¿Cuál es la relación correcta entre la NTS-AV 011 y la NTC-ISO 21101?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'La primera aborda la operación de <i>rappel</i>; la segunda, la gestión de la seguridad en turismo de aventura.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'La primera regula áreas protegidas; la segunda establece las obligaciones ambientales de visitantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'La primera determina impactos ambientales; la segunda establece capacidades de carga para rutas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'La primera regula prestadores hoteleros; la segunda define exclusivamente equipos para descenso.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 17,
+          texto:
+            '¿Qué aspecto debe considerarse al interpretar una norma aplicable a un escenario turístico de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Únicamente el año de expedición y la extensión total del documento consultado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Su vigencia, ámbito, objeto, autoridad competente y relación con el escenario.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Principalmente la frecuencia con que es mencionada por los prestadores turísticos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Exclusivamente la posibilidad de aplicar sus disposiciones en cualquier escenario natural.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 18,
+          texto:
+            '¿Qué implica actuar dentro de las competencias profesionales en una actividad turística de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Ejecutar cualquier procedimiento cuando exista experiencia previa en turismo de naturaleza.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Reemplazar las certificaciones técnicas mediante conocimientos generales sobre sostenibilidad ambiental.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Limitar la participación profesional a funciones para las cuales se cuenta con las competencias requeridas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto:
+                'Priorizar la experiencia turística cuando las condiciones técnicas dificulten cumplir el recorrido previsto.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 19,
+          texto:
+            '¿Cómo se relaciona la ética turística con la responsabilidad ambiental en actividades de <i>rappel</i>?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Orienta decisiones responsables frente a visitantes, comunidades, recursos naturales y territorio.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto:
+                'Permite reemplazar las obligaciones legales mediante decisiones basadas en criterios personales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Se concentra exclusivamente en mejorar la experiencia recreativa ofrecida a los participantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Aplica solamente cuando la actividad turística se desarrolla dentro de un área protegida.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 20,
+          texto:
+            'Ante una condición ambiental sensible identificada en un escenario de <i>rappel</i>, ¿qué actuación refleja mejor un análisis responsable?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Continuar la actividad cuando técnicamente sea posible, independientemente de la condición ambiental.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Considerar la condición, las disposiciones aplicables y las posibles consecuencias de la actividad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Clasificar automáticamente el escenario como no apto para cualquier modalidad de turismo de aventura.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'Trasladar toda responsabilidad ambiental a las personas participantes antes de iniciar el recorrido.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
       ],
+      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_reprobado:
+        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
 }
