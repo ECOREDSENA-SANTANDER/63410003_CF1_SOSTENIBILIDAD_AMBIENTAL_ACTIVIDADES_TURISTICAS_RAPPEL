@@ -395,7 +395,9 @@
 
       p.mb-5(data-aos='fade-right') Las rutas pueden diferenciarse según el tipo de espacio donde se desarrolla el descenso. Esta clasificación facilita organizar información sobre el escenario, aunque no reemplaza la caracterización particular de cada recorrido.
 
-
+      .titulo-tercer-nivel.mb-5(data-aos='fade-right')
+        img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2  Escenarios asociados a las rutas de #[i rappel]
       .row.justify-content-center.mb-5(data-aos='fade-right')
         .col-sm-6.col-lg-3.mb-cus
           .tarjeta--boton.color-primario.p-4.hcard-1

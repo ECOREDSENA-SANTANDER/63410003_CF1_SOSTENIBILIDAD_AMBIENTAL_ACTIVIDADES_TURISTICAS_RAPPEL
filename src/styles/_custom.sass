@@ -106,6 +106,10 @@ figcaption
     background-image: url(../assets/curso/temas/bg/4.svg)
     background-size: cover
     background-repeat: no-repeat
+  &-4
+    background-image: url(../assets/curso/temas/bg/5.svg)
+    background-size: cover
+    background-repeat: no-repeat
 
 .bg-color
   &-1
@@ -118,6 +122,8 @@ figcaption
     background-color: #FDE1C0
   &-5
     background-color: #CEB1A8
+  &-6
+    background-color: #F5EFEE
 
 
 .bg
@@ -129,12 +135,16 @@ figcaption
     background-color: $color-acento-contenido
   &-acento-botones
     background-color: $color-acento-botones
-    
+.pcus
+  &-1
+    padding-right: 3rem   
 .wcus
   &-1
     width: 15%
   &-2
     width: 90%
+  &-3
+    width: 20%
 .mcus
   &-1
     margin-left: 0 !important
@@ -157,9 +167,16 @@ figcaption
     border-top-right-radius: 4rem
   &-4
     border-bottom-left-radius: 4rem
+  &-5
+    border-radius: 2rem
+  &-6
+    border-bottom: 5px solid $color-acento-contenido
+    width: fit-content
 .hcard
   &-1
     height: 420px
+  &-2
+    height: 330px
 .titulo-tercer-nivel
   width: fit-content
   max-width: 100%
@@ -204,6 +221,11 @@ figcaption
 @media screen and (max-width: $bp-min-xxl)
   .mb-cus
     margin-bottom: 2em  !important 
+  .bg-fondo
+    &-4
+      background-image: none
+      background-color: #B7C268
+  
 
 //// TABLET 992--------------------------------------
 @media screen and (max-width: $bp-max-md)
@@ -231,6 +253,9 @@ figcaption
 @media screen and (max-width: $bp-min-md)
   .mb-cus
     margin-bottom: 2em  !important  
+  .hcard
+    &-1, &-2
+      height: auto
   
 
 //// MOBILE 576--------------------------------------
