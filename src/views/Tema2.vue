@@ -12,8 +12,8 @@
         .bloque-texto-g__img.d-none.d-lg-block.br-4(
           :style="{'background-image': `url(${require_src('@/assets/curso/temas/t2/1.png')})`}"
         )
-        .bloque-texto-g__texto.p-4
-          p.mb-2 Las actividades de turismo de aventura presentan una relación estrecha con las características del espacio donde se desarrollan. El relieve, la pendiente, las formaciones geológicas, la cobertura natural, las condiciones meteorológicas o la disponibilidad de accesos pueden influir en la configuración del recorrido. En consecuencia, el escenario no representa únicamente el lugar físico donde ocurre la experiencia, sino un conjunto de condiciones territoriales que requieren reconocimiento previo.
+        .bloque-texto-g__texto.p-4.d-flex.flex-column
+          p.mb-3 Las actividades de turismo de aventura presentan una relación estrecha con las características del espacio donde se desarrollan. El relieve, la pendiente, las formaciones geológicas, la cobertura natural, las condiciones meteorológicas o la disponibilidad de accesos pueden influir en la configuración del recorrido. En consecuencia, el escenario no representa únicamente el lugar físico donde ocurre la experiencia, sino un conjunto de condiciones territoriales que requieren reconocimiento previo.
           p.mb-0 En el #[i rappel], esta relación adquiere especial importancia debido a la utilización de superficies verticales o inclinadas para efectuar el descenso. Paredes rocosas, cañones, cascadas, estructuras naturales o espacios acondicionados pueden presentar características diferentes, por lo que su análisis requiere considerar tanto las particularidades físicas como los componentes ambientales presentes en el área de influencia de la actividad.
       
       p.mb-5 Desde la perspectiva del turismo sostenible, la caracterización del escenario permite comprender las interacciones que pueden producirse entre la práctica turística y el entorno. El análisis incluye las zonas de aproximación, los puntos de permanencia, el tramo destinado al descenso, las áreas de salida o retorno, además de otros espacios utilizados por participantes o prestadores durante el recorrido. Esta mirada integral facilita reconocer factores ambientales relevantes sin reducir el escenario exclusivamente al punto donde ocurre el descenso.
@@ -194,6 +194,10 @@
       .cajon.color-primario.p-4.mb-5(data-aos='fade-right')
         p.mb-0 La biodiversidad colombiana refuerza la importancia de esta valoración. La Política Nacional para la Gestión Integral de la Biodiversidad y sus Servicios Ecosistémicos plantea la conservación de la biodiversidad desde una perspectiva integral, reconociendo la necesidad de mantener la resiliencia de los sistemas socioecológicos y los servicios ecosistémicos asociados (Ministerio de Ambiente y Desarrollo Sostenible [MADS], 2012).
       
+      .titulo-tercer-nivel.mb-5(data-aos='fade-right')
+        img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Condiciones de acceso, aproximación o salida
+      
       .row.justify-content-center.mb-5.align-items-end(data-aos='fade-right')
         .col-sm-12.col-lg-3.d-none.d-lg-block
           img(src='@/assets/curso/temas/t2/22.png')
@@ -258,12 +262,10 @@
 
       .titulo-tercer-nivel.mb-5(data-aos='fade-right')
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Reconocimiento de riesgos y limitaciones ambientales
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Reconocimiento de riesgos, limitaciones ambientales y prohibición normativa.
 
       p.mb-5 Para diferenciar conceptos que pueden confundirse durante el análisis del escenario, se presentan las siguientes categorías:
-      .titulo-tercer-nivel.mb-5(data-aos='fade-right')
-        img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/1.svg')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Dimensiones de la sostenibilidad
+      
       
       .row.justify-content-center.mb-5(data-aos='fade-right')
         .col-sm-12.col-lg-3.d-none.d-lg-block

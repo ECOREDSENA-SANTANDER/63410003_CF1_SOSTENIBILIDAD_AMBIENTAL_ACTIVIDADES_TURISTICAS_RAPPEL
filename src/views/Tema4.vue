@@ -388,13 +388,14 @@
               img(src='@/assets/curso/temas/t4/34.svg')
           h4.text-center Prevención
           p.mb-0 Actuación anticipada frente a comportamientos o situaciones capaces de generar afectaciones.
-
+        
         .tarjeta.bg-fondo-3.px-4.pb-4
           .row.justify-content-center.mb-3
             .col-6
-              img(src='@/assets/curso/temas/t4/35.svg')
-          h4.text-center Corresponsabilidad
-          p.mb-0 Participación de los diferentes actores en la conservación del escenario y en el desarrollo responsable de la actividad.
+              img(src='@/assets/curso/temas/t4/37.svg')
+          h4.text-center Honestidad
+          p.mb-0 Comunicación transparente sobre las características, condiciones y restricciones de la actividad.
+
 
         .tarjeta.bg-fondo-3.px-4.pb-4
           .row.justify-content-center.mb-3
@@ -406,10 +407,12 @@
         .tarjeta.bg-fondo-3.px-4.pb-4
           .row.justify-content-center.mb-3
             .col-6
-              img(src='@/assets/curso/temas/t4/37.svg')
-          h4.text-center Honestidad
-          p.mb-0 Comunicación transparente sobre las características, condiciones y restricciones de la actividad.
+              img(src='@/assets/curso/temas/t4/35.svg')
+          h4.text-center Corresponsabilidad
+          p.mb-0 Participación de los diferentes actores en la conservación del escenario y en el desarrollo responsable de la actividad.
 
+
+        
       .cajon.color-primario.p-4.mb-5(data-aos='fade-right')
         p.mb-0 Estos principios adquieren significado cuando orientan comportamientos concretos. La ética profesional no se limita a declarar respeto por el ambiente; requiere que las decisiones adoptadas durante la actividad sean coherentes con ese compromiso.
 
@@ -426,7 +429,7 @@
           .tarjeta.clr--pink.p-4.rounded-0.h-100
             .tarjeta.bg-white.p-4
               TarjetaAudio.color-acento-botones.mb-0.p-4(
-              texto="Pódcast: Decidir también es cuidar: responsabilidad ambiental en el #[i rappel]"
+              texto="Pódcast: Decidir también es cuidar: responsabilidad ambiental en el <i>rappel</i>"
               :audio="require_src('@/assets/curso/temas/t2/podcast.mp3')"
           )
 

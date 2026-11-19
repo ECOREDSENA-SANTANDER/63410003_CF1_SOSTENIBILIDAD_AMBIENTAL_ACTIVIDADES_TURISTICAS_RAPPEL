@@ -35,8 +35,8 @@
         .bloque-texto-g__img.d-none.d-lg-block.br-4(
           :style="{'background-image': `url(${require_src('@/assets/curso/temas/t1/4.png')})`}"
         )
-        .bloque-texto-g__texto.p-4
-          p.mb-2 El concepto de sostenibilidad se relaciona con la posibilidad de satisfacer las necesidades actuales sin comprometer las condiciones necesarias para que las generaciones futuras puedan atender las propias. Este enfoque tiene como uno de sus antecedentes fundamentales el informe Nuestro futuro común, en el cual se define el desarrollo sostenible como aquel que “satisface las necesidades del presente sin comprometer la capacidad de las futuras generaciones para satisfacer las propias” (Comisión Mundial sobre Medio Ambiente y Desarrollo [CMMAD], 1987, p. 59).
+        .bloque-texto-g__texto.p-4.d-flex.flex-column
+          p.mb-3 El concepto de sostenibilidad se relaciona con la posibilidad de satisfacer las necesidades actuales sin comprometer las condiciones necesarias para que las generaciones futuras puedan atender las propias. Este enfoque tiene como uno de sus antecedentes fundamentales el informe Nuestro futuro común, en el cual se define el desarrollo sostenible como aquel que “satisface las necesidades del presente sin comprometer la capacidad de las futuras generaciones para satisfacer las propias” (Comisión Mundial sobre Medio Ambiente y Desarrollo [CMMAD], 1987, p. 59).
           p.mb-0 Esta concepción permite comprender la sostenibilidad como un proceso que trasciende la protección aislada de los recursos naturales. Su alcance incorpora dimensiones ambientales, sociales y económicas que interactúan dentro de un territorio. En el ámbito turístico, estas dimensiones permiten analizar de manera integral las relaciones generadas entre visitantes, prestadores de servicios, comunidades receptoras, actividades económicas y recursos utilizados para desarrollar la experiencia.
       
       .titulo-tercer-nivel.mb-5(data-aos='fade-right')
